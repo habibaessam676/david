@@ -1,0 +1,362 @@
+DAVID CODE
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CTR & Website Performance – Presentation & Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color:white;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.presentation-container{
+    width:90%;
+    max-width:1100px;
+    height:90vh;
+    background: rgba(255,255,255,0.08);
+    border-radius:20px;
+    box-shadow:0 0 40px rgba(0,0,0,0.6);
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    text-align:center;
+    padding:15px;
+    font-size:22px;
+    font-weight:bold;
+    background:rgba(0,0,0,0.4);
+}
+
+.carousel{
+    flex:1;
+    display:flex;
+    transition:0.6s ease;
+}
+
+.slide{
+    min-width:100%;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+h1{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#00f2fe;
+}
+
+h2{
+    font-size:30px;
+    margin-bottom:20px;
+    color:#00f2fe;
+}
+
+p{
+    font-size:19px;
+    line-height:1.9;
+    margin-bottom:12px;
+}
+
+ul{
+    margin-top:15px;
+    padding-left:20px;
+    font-size:19px;
+    line-height:1.9;
+}
+
+.controls{
+    display:flex;
+    justify-content:space-between;
+    padding:15px;
+    background:rgba(0,0,0,0.4);
+}
+
+button{
+    background:#00f2fe;
+    border:none;
+    padding:10px 25px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.8;
+}
+
+.quiz-btn{
+    margin-top:25px;
+    align-self:center;
+}
+
+.footer{
+    text-align:center;
+    padding:8px;
+    font-size:14px;
+    opacity:0.7;
+}
+
+.quiz-container{
+    display:none;
+    padding:40px;
+}
+
+.question{
+    margin-bottom:20px;
+}
+
+.result{
+    font-size:24px;
+    color:#00f2fe;
+    margin-top:20px;
+    text-align:center;
+}
+
+@media(max-width:768px){
+    h1{font-size:28px;}
+    h2{font-size:24px;}
+    p, ul{font-size:16px;}
+    .slide{padding:30px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="presentation-container">
+
+<header>
+CTR & Website Performance – Professional Presentation
+</header>
+
+<div class="carousel" id="carousel">
+
+<!-- SLIDE 1 -->
+<div class="slide">
+    <h1>Introduction</h1>
+    <p>This presentation explains the most important concepts used to measure website success and digital marketing performance.</p>
+    <p>We will focus on:</p>
+    <ul>
+        <li>Click Through Rate (CTR)</li>
+        <li>Website Performance Parameters</li>
+        <li>Website Performance Analysis Tools</li>
+    </ul>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide">
+    <h2>What is Click Through Rate (CTR)?</h2>
+    <p>Click Through Rate (CTR) is a performance metric that measures how many users click on a specific link after seeing it.</p>
+    <p><b>Formula:</b> CTR = (Number of Clicks ÷ Number of Impressions) × 100</p>
+    <p><b>Example:</b> If 200 people see an ad and 20 click it, the CTR is 10%.</p>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+    <h2>Why CTR Is Important</h2>
+    <p>CTR is one of the most important indicators of digital success because it measures user interest.</p>
+    <ul>
+        <li>Shows if users are engaged with content</li>
+        <li>Helps evaluate advertising effectiveness</li>
+        <li>Improves search engine ranking (SEO)</li>
+        <li>Optimizes marketing spending</li>
+        <li>Increases chances of conversion</li>
+    </ul>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+    <h2>Where CTR Is Used</h2>
+    <p>CTR is widely used across digital platforms:</p>
+    <ul>
+        <li>Websites and landing pages</li>
+        <li>Google search engine results</li>
+        <li>Social media advertising (Facebook, Instagram)</li>
+        <li>YouTube thumbnails and video titles</li>
+        <li>E-commerce product pages</li>
+    </ul>
+</div>
+
+<!-- SLIDE 5 -->
+<div class="slide">
+    <h2>What Are Website Performance Parameters?</h2>
+    <p>Website performance parameters are key indicators that measure how efficiently a website operates.</p>
+    <ul>
+        <li><b>Speed:</b> How fast the website loads</li>
+        <li><b>CTR:</b> User interaction through clicks</li>
+        <li><b>Bounce Rate:</b> Percentage of users who leave immediately</li>
+        <li><b>Conversion Rate:</b> Users who complete actions (buy, register)</li>
+        <li><b>Mobile Performance:</b> Website efficiency on smartphones</li>
+    </ul>
+</div>
+
+<!-- SLIDE 6 -->
+<div class="slide">
+    <h2>Why Website Performance Matters</h2>
+    <p>Good website performance directly affects business success and user satisfaction.</p>
+    <ul>
+        <li>Fast websites improve user trust</li>
+        <li>Better performance increases sales</li>
+        <li>Reduces bounce rates</li>
+        <li>Improves brand credibility</li>
+        <li>Boosts SEO ranking</li>
+    </ul>
+</div>
+
+<!-- SLIDE 7 -->
+<div class="slide">
+    <h2>What Are Website Performance Tools?</h2>
+    <p>Website performance tools are digital platforms used to analyze, test, and improve websites.</p>
+    <p>They provide detailed data about:</p>
+    <ul>
+        <li>Website speed and loading time</li>
+        <li>User behavior</li>
+        <li>Page traffic and visits</li>
+        <li>Errors and weak pages</li>
+    </ul>
+</div>
+
+<!-- SLIDE 8 -->
+<div class="slide">
+    <h2>Why We Use Website Performance Tools</h2>
+    <ul>
+        <li>Identify slow-loading pages</li>
+        <li>Improve user experience</li>
+        <li>Increase CTR and engagement</li>
+        <li>Boost conversion rates</li>
+        <li>Fix technical website issues</li>
+    </ul>
+    <p>These tools help businesses grow online successfully.</p>
+
+    <button class="quiz-btn" onclick="openQuiz()">✅ Take the Test</button>
+</div>
+
+<!-- SLIDE 9 -->
+<div class="slide">
+    <h2>Conclusion</h2>
+    <p>CTR and Website Performance are the foundation of digital success.</p>
+    <ul>
+        <li>CTR measures user interest</li>
+        <li>Performance parameters measure website quality</li>
+        <li>Performance tools help improve results</li>
+    </ul>
+    <p>A successful website must be fast, engaging, and user-friendly.</p>
+</div>
+
+</div>
+
+<!-- QUIZ SECTION -->
+<div class="quiz-container" id="quiz">
+
+    <h2>CTR & Website Performance Test</h2>
+
+    <div class="question">
+        <p>1. What does CTR measure?</p>
+        <input type="radio" name="q1" value="1"> The percentage of users who click after seeing content<br>
+        <input type="radio" name="q1" value="0"> The color of a website design<br>
+    </div>
+
+    <div class="question">
+        <p>2. Which formula is correct for calculating CTR?</p>
+        <input type="radio" name="q2" value="1"> (Number of Clicks ÷ Number of Impressions) × 100<br>
+        <input type="radio" name="q2" value="0"> (Impressions ÷ Clicks) × 100<br>
+    </div>
+
+    <div class="question">
+        <p>3. Which one is a website performance parameter?</p>
+        <input type="radio" name="q3" value="1"> Bounce Rate<br>
+        <input type="radio" name="q3" value="0"> Background Image<br>
+    </div>
+
+    <div class="question">
+        <p>4. What does a high bounce rate indicate?</p>
+        <input type="radio" name="q4" value="1"> Users leave the website quickly<br>
+        <input type="radio" name="q4" value="0"> Users stay and shop more<br>
+    </div>
+
+    <div class="question">
+        <p>5. Why are website performance tools used?</p>
+        <input type="radio" name="q5" value="1"> To analyze and improve website performance<br>
+        <input type="radio" name="q5" value="0"> To change website theme colors only<br>
+    </div>
+
+    <button onclick="submitQuiz()">Submit Test</button>
+
+    <div class="result" id="result"></div>
+
+</div>
+
+<div class="controls">
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+</div>
+
+<div class="footer">
+    Professional Digital Performance Presentation
+</div>
+
+</div>
+
+<script>
+let index = 0;
+const carousel = document.getElementById("carousel");
+const totalSlides = document.querySelectorAll(".slide").length;
+
+function nextSlide(){
+    if(index < totalSlides - 1){
+        index++;
+        carousel.style.transform = "translateX(" + (-index * 100) + "%)";
+    }
+}
+
+function prevSlide(){
+    if(index > 0){
+        index--;
+        carousel.style.transform = "translateX(" + (-index * 100) + "%)";
+    }
+}
+
+function openQuiz(){
+    document.getElementById("carousel").style.display = "none";
+    document.querySelector(".controls").style.display = "none";
+    document.getElementById("quiz").style.display = "block";
+}
+
+function submitQuiz(){
+    let score = 0;
+    for(let i = 1; i <= 5; i++){
+        let answer = document.querySelector(`input[name="q${i}"]:checked`);
+        if(answer && answer.value == "1"){
+            score++;
+        }
+    }
+
+    document.getElementById("result").innerHTML = 
+        "✅ Your Score: " + score + " / 5";
+}
+</script>
+
+</body>
+</html>
